@@ -10,6 +10,10 @@ export default defineConfig({
     port: 3030,
     open: true
   },
+  preview: {
+    port: 3030, // 设置预览模式的端口号为 8080
+    // 你可以添加其他预览选项，如 host、https 等
+  },
   resolve: {
     alias: [
       {
@@ -21,20 +25,20 @@ export default defineConfig({
   optimizeDeps: {
     include: ["element-plus/dist/locale/zh-cn"]
   },
-  build: {
-    rollupOptions: {
-      // 请确保外部化那些你的库中不需要的依赖
-      external: ['vue'],
-      output: {
-        // 在 UMD 构建模式下为这些外部化的依赖提供一个全局变量
-        globals: {
-          vue: 'Vue',
-        },
-      },
-    },
-    lib: {
-      entry: './packages/index.ts',
-      name: 'ds-vue3-form',
-    },
-  }
+  // build: {
+  //   rollupOptions: {
+  //     // 请确保外部化那些你的库中不需要的依赖
+  //     external: ['vue'],
+  //     output: {
+  //       // 在 UMD 构建模式下为这些外部化的依赖提供一个全局变量
+  //       globals: {
+  //         vue: 'Vue',
+  //       },
+  //     },
+  //   },
+  //   lib: {
+  //     entry: './packages/index.ts',
+  //     name: 'ds-vue3-form',
+  //   },
+  // }
 })

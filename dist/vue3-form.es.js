@@ -1166,7 +1166,7 @@ const _sfc_main$1 = defineComponent({
   }
 });
 const __default__ = {
-  name: "@ds-ui/vue3-form"
+  name: "ds-vue3-form"
 };
 const _sfc_main = defineComponent({
   ...__default__,

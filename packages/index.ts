@@ -8,10 +8,17 @@ const components = [
     XmwForm
 ]
 
+// 扩展 Window 接口
+declare global {
+    interface Window {
+        Vue: any;
+    }
+}
+
 // 定义 install 方法
 const install = function (Vue: any) {
-    if (install.installed) return
-    install.installed = true
+    if ((install as any).installed) return
+    (install as any).installed = true
     // 遍历并注册全局组件
     components.map(component => {
         Vue.component(component.name, component)

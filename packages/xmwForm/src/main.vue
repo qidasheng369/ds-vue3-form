@@ -34,7 +34,7 @@
 </template>
 <script lang="ts">
 export default {
-  name: "@ds-ui/vue3-form", //这个⾮常重要，就是未来你放到其他项⽬中，组件标签的名字，⽐如：<@ds-ui/vue3-form></@ds-ui/vue3-form>
+  name: "ds-vue3-form", //这个⾮常重要，就是未来你放到其他项⽬中，组件标签的名字，⽐如：<ds-vue3-form></ds-ui/vue3-form>
 };
 </script>
 <script lang="ts" setup>

@@ -34,7 +34,7 @@ export default defineConfig({
     },
     lib: {
       entry: './packages/index.ts',
-      name: '@ds-ui/vue3-form',
+      name: 'ds-vue3-form',
     },
   }
 })

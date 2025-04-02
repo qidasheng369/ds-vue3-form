@@ -461,7 +461,7 @@ onMounted(() => {
       class="container"
       style="width: 90%; margin: 0 auto; padding-bottom: 30px"
     >
-      <@ds-ui/vue3-form
+      <ds-vue3-form
         :formData="formData"
         :formColumns="formColumns"
         :formRules="formRules"
@@ -481,7 +481,7 @@ onMounted(() => {
             <el-button @click="handlerReset">重置</el-button>
           </div>
         </template>
-      </@ds-ui/vue3-form>
+      </ds-vue3-form>
     </div>
   </el-config-provider>
 </template>

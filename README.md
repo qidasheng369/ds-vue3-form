@@ -1,28 +1,28 @@
-### 预览地址：[vue3-xmw-form](https://ele-plus-form.baiwumm.com/)
+### 预览地址：[@ds-ui/vue3-form](https://github.com/qidasheng369/ds-vue3-form)
 
 # vue3-xmw-from
 
 基于 `Vue3` + `Element-plus` 封装的 `Form` 组件，支持所有 `Element-plus Form` 组件配置项 [文档](https://element-plus.gitee.io/zh-CN/component/form.html)
 
 ### 使用方法
-* 根目录下执行 `npm i vue3-xmw-form` 命令
+* 根目录下执行 `npm i @ds-ui/vue3-form` 命令
 ```POWERSHELL
-npm i vue3-xmw-form
+npm i @ds-ui/vue3-form
 ```
 
 * 全局挂载组件
 ```JAVASCRIPT
 import { createApp } from 'vue'
 import App from './App.vue'
-import Xmwform from 'vue3-xmw-form'
+import DsVue3Form from '@ds-ui/vue3-form'
 
-createApp(App).use(Xmwform).mount('#app')
+createApp(App).use(DsVue3Form).mount('#app')
 ```
 
 * 在页面上使用
 ```HTML
 <!-- template -->
-<vue3-xmw-form
+<ds-vue3-form
     :formData="formData"
     :formColumns="formColumns"
     :formRules="formRules"
@@ -42,7 +42,7 @@ createApp(App).use(Xmwform).mount('#app')
         <el-button @click="handlerReset">重置</el-button>
         </div>
     </template>
-</vue3-xmw-form>
+</ds-vue3-form>
 ```
 
 ### Form 属性

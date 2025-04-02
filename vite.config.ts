@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [vue(), vueJsx({})],
   server: {
     host: '0.0.0.0', //解决"vite use --host to expose"
-    port: 8080,
+    port: 3030,
     open: true
   },
   resolve: {
